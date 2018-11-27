@@ -1,0 +1,20 @@
+{
+    "projectName": "grudges",
+    "projectPath": "/Users/brownerd/Dev/Learning/AWS/rapid-dev-fem/grudges",
+    "defaultEditor": "code",
+    "frontendHandler": {
+        "javascript": "/Users/brownerd/.nvm/versions/node/v11.0.0/lib/node_modules/@aws-amplify/cli/node_modules/amplify-frontend-javascript"
+    },
+    "javascript": {
+        "framework": "react",
+        "config": {
+            "SourceDir": "src",
+            "DistributionDir": "build",
+            "BuildCommand": "npm run build",
+            "StartCommand": "npm run start"
+        }
+    },
+    "providers": {
+        "awscloudformation": "/Users/brownerd/.nvm/versions/node/v11.0.0/lib/node_modules/@aws-amplify/cli/node_modules/amplify-provider-awscloudformation"
+    }
+}

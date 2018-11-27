@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "grudges-20181127150211-authRole",
+            "UnauthRoleArn": "arn:aws:iam::850717327335:role/grudges-20181127150211-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::850717327335:role/grudges-20181127150211-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "grudges-20181127150211-deployment",
+            "UnauthRoleName": "grudges-20181127150211-unauthRole",
+            "StackName": "grudges-20181127150211",
+            "StackId": "arn:aws:cloudformation:us-east-1:850717327335:stack/grudges-20181127150211/c1607130-f287-11e8-8e7f-50a686e4bb82"
+        }
+    }
+}

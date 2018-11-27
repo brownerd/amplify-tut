@@ -1,0 +1,53 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "grudges-20181127150211-authRole",
+			"UnauthRoleArn": "arn:aws:iam::850717327335:role/grudges-20181127150211-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::850717327335:role/grudges-20181127150211-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "grudges-20181127150211-deployment",
+			"UnauthRoleName": "grudges-20181127150211-unauthRole",
+			"StackName": "grudges-20181127150211",
+			"StackId": "arn:aws:cloudformation:us-east-1:850717327335:stack/grudges-20181127150211/c1607130-f287-11e8-8e7f-50a686e4bb82"
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/grudges-20181127150211-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2018-11-27T21:24:17.521Z",
+			"output": {
+				"S3BucketSecureURL": "https://grudges-20181127151618--hostingbucket.s3.amazonaws.com",
+				"WebsiteURL": "http://grudges-20181127151618--hostingbucket.s3-website-us-east-1.amazonaws.com",
+				"Region": "us-east-1",
+				"HostingBucketName": "grudges-20181127151618--hostingbucket"
+			},
+			"lastPushDirHash": "vvxySFrVhZcJCf23Q5amB1DNdew="
+		}
+	},
+	"auth": {
+		"cognito75bf8fce": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/grudges-20181127150211-deployment/amplify-cfn-templates/auth/cognito75bf8fce-cloudformation-template.yml",
+				"logicalId": "authcognito75bf8fce"
+			},
+			"lastPushTimeStamp": "2018-11-27T21:24:17.530Z",
+			"output": {
+				"AppClientSecret": "1vu80jntln3e8pcfbn249ofe9bv3cr3lfvoju8bhj164kac9fskk",
+				"UserPoolId": "us-east-1_K0muGAqho",
+				"AppClientIDWeb": "6sf3i808khu0ef5cp2e0og4qjc",
+				"AppClientID": "l8p7hs9kq58of29s19dncvtqu",
+				"IdentityPoolId": "us-east-1:28badefb-ecd3-47c7-8e62-63755095f356",
+				"IdentityPoolName": "cognito75bf8fce_identitypool_75bf8fce",
+				"UserPoolName": "cognito75bf8fce_userpool_75bf8fce"
+			},
+			"lastPushDirHash": "eVz490Ge3aJP9gGW7o06l5AcfCw="
+		}
+	}
+}
